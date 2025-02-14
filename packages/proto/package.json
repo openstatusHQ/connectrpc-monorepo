@@ -1,0 +1,12 @@
+{
+    "name": "proto",
+    "version": "0.0.0",
+    "scripts": {
+      "buf": "buf generate"
+    },
+    "devDependencies": {
+      "@bufbuild/buf":"1.50.0",
+      "@bufbuild/protoc-gen-es": "2.2.3",
+      "@connectrpc/protoc-gen-connect-query": "2.0.1"
+    }
+  }

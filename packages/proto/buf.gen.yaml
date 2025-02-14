@@ -1,0 +1,15 @@
+version: v2
+plugins:
+
+  - local: protoc-gen-es
+    out: ../../apps/server/src/gen/proto
+    opt: target=ts
+    include_imports: true
+  - local: protoc-gen-es
+    out: ../../apps/web/src/gen/proto
+    opt: target=ts
+    include_imports: true
+  - local: protoc-gen-connect-query
+    out: ../../apps/web/src/gen/proto
+    opt: target=ts
+    include_imports: true
