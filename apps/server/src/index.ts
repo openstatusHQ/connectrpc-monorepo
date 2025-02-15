@@ -42,7 +42,6 @@ for (const uHandler of router.handlers) {
 
 for (const [path, handler] of paths) {
 	app.post(path, async (c) => {
-		console.log("Request received");
 		const uReq = {
 		  ...universalServerRequestFromFetch(c.req.raw, {}),
 		  contextValues: createContextValues().set(kStore, c.env.STORE),
@@ -54,7 +53,7 @@ for (const [path, handler] of paths) {
 }
 
 app.get("/", async (c) => {
-	  return c.text("Hello World");
+	  return c.text("I love OpenStatus");
 });
 
 showRoutes(app, {

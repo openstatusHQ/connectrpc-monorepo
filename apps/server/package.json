@@ -1,5 +1,5 @@
 {
-	"name": "hono-connectrpc",
+	"name": "@prostack/server",
 	"version": "0.0.0",
 	"private": true,
 	"type": "module",
